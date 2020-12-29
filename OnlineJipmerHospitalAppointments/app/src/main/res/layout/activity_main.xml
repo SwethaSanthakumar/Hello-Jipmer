@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+    <ScrollView android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/bottom_navigation"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative1"
+            android:padding="40px"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:text="This mobile app is intended for helping the patients to easily call the appropriate contact and for booking appointments online.
+        "></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_below="@id/text1"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="இந்த செயலி ஜிப்மர் மருத்துவமனைக்கு சிகிச்சைக்காக செல்லவிருக்கும் நோயாளிகளுக்கு அவர்கள் சிகிச்சை பெற விரும்பும் மருத்துவத்துறைக்கான தொலைபேசி எண்ணை எளிதாக காண்பிப்பதற்காகவும், அந்த எண்ணை தட்டச்சு செய்யாமலே (அந்த எண்ணை தொடுவதன் மூலம்) உடனடியாக தொடர்பு கொள்ளும் வண்ணம் உருவாக்கப்பட்டுள்ளது."></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative2"
+            android:padding="40px"
+            android:layout_marginTop="20px"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text3"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"
+            android:text="APPOINTMENT TIMINGS "></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text4"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_baseline_star_border_24"
+            android:textColor="#000000"
+            android:text="Monday To Friday 9 AM to 4 PM \nSaturday 9 AM to 12 NOON "></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text5"
+            android:layout_below="@id/text4"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"
+            android:text="முன்பதிவு நேரம்"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text6"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_baseline_star_border_24"
+            android:textColor="#000000"
+            android:text="திங்கள் முதல் வெள்ளி வரை காலை 9 மணி முதல் மாலை 4 மணி வரை மற்றும் \nசனிக்கிழமைகளில் 9 மணி முதல் மதியம் 12 மணி வரை"></TextView>
+        </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
